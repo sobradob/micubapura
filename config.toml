@@ -1,0 +1,107 @@
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "Online Tourism Services"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "CubaPura"
+	description = "Online Tourism Services in Cuba"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Online Tourism Services in Cuba"
+
+		[params.navigation.links]
+			about     = "About"
+			services  = "Services"
+			portfolio = "Portfolio"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Mi Cuba Pura"
+		subtitle   = "We offer the best of Cuba online!"
+		buttonText = "Check it out!"
+
+
+	# About section
+	[params.about]
+		headline    = "Most people plan their holiday online."
+		description = "From booking their accomodation to arranging their transfers, most tourists are used to planning their holidays online. This can be a bit difficult for people to do in Cuba, and people offering services in Cuba have trouble selling them online. We are here to help!"
+		buttonText  = "What do we do?"
+
+
+	# Service section
+	[params.services]
+		headline = "Our guarantee"
+
+        [[params.services.list]]
+            icon = "fa-diamond"
+            title = "Good quality"
+            description = "Despite the sunshine, Cuba can be a bit rough at times. We aim to make it as pleasant as possible."
+
+        [[params.services.list]]
+			icon = "fa-paper-plane"
+			title = "Fast response"
+			description = "Whatever issues you may have, we are here to help. And fast."
+
+		[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "Up to Date"
+            description = "No stale information. All that we offer is fresh."
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "Made with Love"
+            description = "We love Cuba, and we hope you'll fall in love too."
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+    # Aside section
+	[params.aside]
+		headline = "Check out our rental properties on offer!"
+
+		[params.aside.button]
+			text = "View now!"
+			link = "https://www.airbnb.com/wishlists/186730444"
+
+	# Contact section
+	[params.contact]
+		headline = "Feel free to get in touch!"
+		description = "We offer you the best Cuba has to offer, with 21st century standards of quality."
+		phone = "+5378786966"
+		email = "general@micubapura.com"
+
+	# Google Maps section
+	# [params.location]
+	# 	latitude  = "23.135562"
+	# 	longitude = "-82.387859"
+	# 	maps_api_key = ""
